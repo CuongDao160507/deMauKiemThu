@@ -7,7 +7,7 @@ public class ArraySumService {
         int sum  = 0;
         for (int num : arr) {
             if (num < 0 || num > 1000) throw new IllegalArgumentException("mang phai nam trong khoang 0 den 1000");
-            sum = sum + num;
+            sum += num;
         }
         return sum;
     }
